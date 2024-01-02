@@ -3,4 +3,6 @@ matplotlib
 scipy
 numba
 cirq
+qsimcirq
+networkx
 jupyter
