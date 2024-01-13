@@ -27,7 +27,7 @@ class GraphDescription:
     """If the graph is a 2d grid or not."""
     dimension: Optional[int] = None
     """The dimension of the space in which the graph has a meaningful 
-    intepretation."""
+    interpretation."""
 
 
 class Graph(ABC):
@@ -65,7 +65,7 @@ class Graph(ABC):
 
     def get_neighborhood(self, node):
         """Get nearest neighborhood of a given node."""
-        return nx.neighbors(self.graph, node)
+        return list(nx.neighbors(self.graph, node))
 
     def _regular_layout(self) -> None:
         """Compute node positions for plotting in case of regular graphs."""
